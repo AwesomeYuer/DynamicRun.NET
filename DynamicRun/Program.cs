@@ -80,7 +80,7 @@ class Program
 
         foreach (var file in files)
         {
-            var fileName = Path.GetFileNameWithoutExtension(file);
+            var fileName = Path.GetFileName(file);
             var filePath = Path.Combine(watcherSourcesDirectoryPath, fileName);
             File.Copy(file, filePath, true);
         }
