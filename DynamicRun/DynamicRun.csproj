@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,10 +8,9 @@
   <ItemGroup>
     <Compile Remove="Sources\DynamicProgram.cs" />
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="Sources\DynamicProgram.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Sources\DynamicProgram.cs" />
   </ItemGroup>
 
   <ItemGroup>
